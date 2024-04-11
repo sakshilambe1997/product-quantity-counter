@@ -133,3 +133,25 @@
     </div>
 
 
+    <script>
+        function increaseQuantity() {
+            const increaseElement = document.getElementById('incre-decre-value');
+            let quantityItems=document.getElementById('items-value');
+            let increValue = parseInt(increaseElement.innerText);
+            let totalPrice=document.getElementById('total-value')
+
+            if(increValue<10){
+                increaseElement.innerText = ++increValue;
+            }
+            else{
+                alert('you can not add more than 10 items');
+            }
+
+            quantityItems.innerText = `${increValue} x 699`
+            totalPrice.innerText= `Total : ₹ ${increValue *699}`;
+     
+        }
+
+        
+
+
