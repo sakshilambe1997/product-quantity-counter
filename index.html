@@ -60,6 +60,16 @@
             font-weight: bold;
             font-size: 18px;
         }
+
+        .incre-decre-value {
+                font-size: 18px;
+
+            }
+
+            .incre-decre-img {
+                height: 25px;
+            }
+
     </style>
 
 
@@ -83,3 +93,10 @@
         </div>
 
         <p class="total-value" id="total-value">Total: 699</p>
+
+        <div class="incre-decre-container">
+            <img src="./minus.png" class="incre-decre-img" onClick="decreaseQuantity()" />
+            <span class="incre-decre-value" id="incre-decre-value">1</span>
+            <img src="./plus.png" class="incre-decre-img" onClick='increaseQuantity()' />
+
+        </div>
