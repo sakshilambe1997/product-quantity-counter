@@ -152,6 +152,28 @@
      
         }
 
-        
+        function decreaseQuantity() {
+            const decreaseElement = document.getElementById('incre-decre-value');
+            let quantityItems=document.getElementById('items-value');
+            let decreValue=parseInt(decreaseElement.innerText);
+            let totalPrice=document.getElementById('total-value')
+
+            if(decreValue>1){
+                decreaseElement.innerText= --decreValue;  
+            }
+            else{
+                alert("you can't add less than 10 items")
+            }
+
+            quantityItems.innerText=`${decreValue} x 699`
+
+            quantityItems.innerText = `${decreValue} x 699`
+            totalPrice.innerText= `Total : ₹ ${decreValue *699}`;
+        }
+    </script>
+
+</body>
+
+</html>
 
 
